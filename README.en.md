@@ -13,82 +13,17 @@ Find evidence of your skills in coursework, student activities, internships, and
 
 **For Claude Code, Codex, and other tools that support Agent Skills. Free and open source.**
 
-[Quick start](#quick-start) · [What it helps with](#what-it-helps-with) · [Capabilities](#capabilities) · [Install](#install) · [Using the toolkit](#using-the-toolkit)
+[Quick start](#quick-start) · [What it helps with](#what-it-helps-with) · [Guide](docs/guide.en.md) · [Skill directory](docs/skill-inventory.en.md) · [Installation and updates](docs/install.en.md)
 
-![From experience to job search materials](docs/career-assets-flow.en.svg)
+**Start with `zane-career-assets` and describe the task at hand.** It selects the methods needed for your task. You can begin with the material you already have.
 
-## What it helps with
-
-Start with a real experience and connect it to the work you want to do.
-
-| What you want to do | What the toolkit helps you produce |
-| --- | --- |
-| Review coursework, student activities, internships, or a first job | Specific actions, work samples, and evidence of your contribution |
-| Compare roles or reconsider your direction after graduation | Role comparisons grounded in your experience, with practical ways to explore |
-| Create a resume in Chinese, English, or another language | Content and layout suited to the hiring market, with editable and exportable files |
-| Present projects and work samples | A clear division of roles between your resume, website, and case studies |
-| Prepare introductions and project interviews | Answers grounded in your experience, with practice one turn at a time |
-| Present team projects and employer material | Clear attribution and a considered choice of what to share |
-| Update multiple languages and formats | Consistent facts across resumes, websites, cases, and interview stories |
+<a id="install"></a>
 
 ## Quick start
 
 ### 1. Install
 
-```bash
-npx -y skills add ZanePan2027/zane-career-skills -g --all
-```
-
-### 2. Tell your Agent what you are working on
-
-```text
-Use zane-career-assets.
-I am preparing for my first job. I completed a course project and managed
-registration and check-in for a student event. Here are my report and notes.
-Help me identify what belongs on my resume, then compare what to emphasize
-for these two roles.
-```
-
-You can also ask for a specific result:
-
-```text
-Use zane-career-assets. I graduated two years ago and am comparing operations
-with brand planning. Here is my work history and two job descriptions.
-
-Use zane-career-resume-builder to create an English resume for a product internship.
-
-Use zane-career-assets to practice a project interview, one turn at a time,
-based on this resume and job description.
-
-Use zane-career-portfolio-website-design to build a portfolio from these projects.
-```
-
-## How it works
-
-The toolkit organizes facts and evidence from your experience, then uses the target role to decide what to emphasize and how to present it. Your resume, portfolio, application message, and interview answers draw on the same material. A corrected fact carries through to the affected work.
-
-For example, a student event can provide evidence of coordination and execution. The toolkit distinguishes your actions from the team's work and the event's scale, writes a clear resume entry, and helps you explain the process in an interview.
-
-## Capabilities
-
-| Goal | Main Skill | Typical output |
-| --- | --- | --- |
-| Review experience, compare roles, prepare for interviews | `zane-career-assets` | Evidence, role comparisons, answer drafts, and practice |
-| Build a complete set of application materials | `zane-career-portfolio-builder` | Resume, portfolio, cases, and application entry points |
-| Create or localize a resume | `zane-career-resume-builder` | Content, layout, editable source, and PDF |
-| Plan how recruiters read a portfolio | `zane-career-portfolio-architecture` | Homepage, detailed cases, and work index |
-| Build a portfolio website | `zane-career-portfolio-website-design` | Visual design, responsive pages, and source files |
-| Write project stories | `zane-career-case-editor-zh`, `zane-evidence-weighted-case-storytelling` | Decisions, actions, results, and individual contributions |
-| Prepare employer material for sharing | `zane-former-employer-data-redactor` | Material to publish, redact, or discuss in an interview |
-| Write the first application message | `zane-career-application-greeting` | A short message suited to the role and language |
-| Check deliverable files | `zane-portfolio-multi-format-qa` | Web, PDF, Word, QR code, and link checks |
-| Work from visual references | `zane-design-reference-to-prompt` | Design direction and implementation requirements |
-
-Start with `zane-career-assets`, or call a specific Skill for a focused task. See the [Skill inventory](docs/skill-inventory.md) for details in Chinese.
-
-## Install
-
-### Recommended: install the complete collection
+Run in your terminal:
 
 ```bash
 npx -y skills add ZanePan2027/zane-career-skills -g --all
@@ -101,18 +36,63 @@ Install all Skills from https://github.com/ZanePan2027/zane-career-skills.
 Then use zane-career-assets to help me with this: ...
 ```
 
-Reload Skills if your tool requires it. To install for the current project, omit `-g`. For an update, ask the Agent to compare the installed copy with the repository and preserve your local edits before replacing it.
+Select your Agent in the installer, then reload Skills if required. The terminal command requires Node.js and `npx`. Omit `-g` to install for the current project; see the [installation guide](docs/install.en.md) for updates.
 
-## Using the toolkit
+### 2. Describe the task
 
-Share your current job search goal and the material you have: an experience, an old resume, a course report, a work sample, or a job description. The toolkit starts with the task at hand.
+```text
+Use zane-career-assets.
+I am preparing for my first job. I completed a course project and managed
+registration and check-in for a student event. Here are my report and notes.
+Help me identify what belongs on my resume, then compare what to emphasize
+for these two roles.
+```
 
-- **When reviewing experience**, explain what you did and share material that helps reconstruct the work.
-- **When creating application materials**, specify the role, hiring market, language, and desired files.
-- **When preparing for interviews**, use the relevant resume and job description for drafting or live practice.
-- **When you receive feedback**, bring back recruiters' questions, revision requests, or factual corrections to update the affected work.
+A useful first result is a set of relevant experiences, your contribution, facts to clarify, and role-specific resume bullets. Share an existing resume or job description if available. You can also begin by describing one thing you have done.
 
-Keep the results in a project location you choose. Ask the Agent to save the current material and stopping point when you want to continue later.
+### 3. Continue with a draft or practice
+
+```text
+Turn this experience into a resume bullet.
+Then practice an interview about it. Ask one question at a time and wait for my answer.
+```
+
+For a complete resume, portfolio, or website, specify the role, language, and files you need. The same entry also handles a single focused task.
+
+## What it helps with
+
+| What you can say | What you can get |
+| --- | --- |
+| I have no internship. Can a course project go on my resume? | Your actions, work samples, and supported resume bullets |
+| What evidence do I have for each of these two roles? | A comparison of requirements, strengths, and missing evidence |
+| I have an old resume and want to apply in English | Content and layout adapted to the role and hiring market |
+| My project answer sounds like a list of events | A clear answer, with follow-up questions and revisions |
+| We worked as a team. How do I describe my contribution? | A distinction between your actions and team results |
+| I want a portfolio to show my projects | Reading structure, case content, and a website implementation |
+
+![From experience to job search materials](docs/career-assets-flow.en.svg)
+
+## From experience to application materials
+
+The Agent organizes facts and evidence from your experience, then uses the target role to decide what to emphasize. Resumes, portfolios, application messages, and interview answers draw on that evidence.
+
+When continuing the same project, bring back corrections or hiring feedback. The Agent checks which materials are affected, updates them, and explains what changed. Producing and checking Word, PDF, or website files uses the tools available in your Agent environment.
+
+[Follow a complete example: from a student event to a resume and interview](docs/guide.en.md)
+
+## Continue a previous task
+
+Keep the work in a project folder you choose. Before pausing, ask the Agent to save the selected version, outstanding facts, and next step. Give a later session that folder and identify the application or interview practice to continue.
+
+If the chat cannot read or write files, save a continuation note and provide it next time with the relevant material.
+
+## Use a specific method
+
+Start with `zane-career-assets`. Once familiar, you can directly select resume, portfolio, case writing, application messages, or delivery checks. The [Skill directory](docs/skill-inventory.en.md) lists situations, example requests, and outputs for all eleven entries.
+
+## Choosing between the two toolkits
+
+Start here to match experience to roles, create application materials, and practice interviews. For a choice involving family arrangements, finances, location, and personal direction, use [Live Your Life Well](https://github.com/ZanePan2027/zane-life-workbench) to weigh them together. Each toolkit works independently.
 
 ## Provenance and license
 
