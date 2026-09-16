@@ -15,6 +15,8 @@ Find evidence of your skills in coursework, student activities, internships, and
 
 [Quick start](#quick-start) · [What it helps with](#what-it-helps-with) · [Guide](docs/guide.en.md) · [Skill directory](docs/skill-inventory.en.md) · [Installation and updates](docs/install.en.md)
 
+![From experience to job search materials](docs/career-assets-flow.en.svg)
+
 **Start with `zane-career-assets` and describe the task at hand.** It selects the methods needed for your task. You can begin with the material you already have.
 
 <a id="install"></a>
@@ -69,8 +71,6 @@ For a complete resume, portfolio, or website, specify the role, language, and fi
 | My project answer sounds like a list of events | A clear answer, with follow-up questions and revisions |
 | We worked as a team. How do I describe my contribution? | A distinction between your actions and team results |
 | I want a portfolio to show my projects | Reading structure, case content, and a website implementation |
-
-![From experience to job search materials](docs/career-assets-flow.en.svg)
 
 ## From experience to application materials
 

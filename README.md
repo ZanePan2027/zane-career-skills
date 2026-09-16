@@ -15,6 +15,8 @@
 
 [快速开始](#快速开始) · [可以处理的事](#可以处理的事) · [使用教程](docs/guide.md) · [能力目录](docs/skill-inventory.md) · [安装与更新](docs/install.md)
 
+![从经历到求职表达](docs/career-assets-flow.zh-CN.svg)
+
 **第一次只需使用 `zane-career-assets`，直接说当前要处理的事。** 它会按任务选择需要的方法；你可以从手边的一段材料开始。
 
 <a id="安装"></a>
@@ -68,8 +70,6 @@ npx -y skills add ZanePan2027/zane-career-skills -g --all
 | 面试讲项目时总像在念流水账 | 清楚的项目回答，以及逐轮追问和修改 |
 | 项目是团队做的，我该怎样写自己的贡献？ | 本人动作与团队结果的区分、可支持的表达 |
 | 想用作品集展示项目 | 阅读结构、案例内容和网站实现 |
-
-![从经历到求职表达](docs/career-assets-flow.zh-CN.svg)
 
 ## 从经历到求职材料
 
