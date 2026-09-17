@@ -9,7 +9,7 @@
 
 **面向入职前各环节的 AI 求职工具箱，重点服务实习生、应届毕业生和工作 1—2 年的新人。** 有多年经验、正在换工作的人也可以用，按实际资历处理。
 
-**支持：豆包桌面端（本地 Skills 模式）、WorkBuddy、Claude Code、Codex，以及其他支持 Skills 的 Agent。免费开源。**
+**支持：豆包、WorkBuddy、Claude Code、Codex，以及其他支持 Skills 的 Agent。免费开源。**
 
 [快速开始](#快速开始) · [可以处理的事](#可以处理的事) · [使用教程](docs/guide.md) · [能力目录](docs/skill-inventory.md) · [安装与更新](docs/install.md)
 
