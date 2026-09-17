@@ -1,6 +1,10 @@
 # 安装与更新
 
-在支持 Agent Skills 的工具中使用这套方法。[English](install.en.md)
+[English](install.en.md)
+
+## 适用 Agent
+
+豆包、WorkBuddy、Claude Code、Codex，以及其他支持 Skills 的 Agent。使用 Agent 的 Skills 功能时，按下方指令安装，或直接把安装请求交给 Agent。
 
 ## 快速安装
 
