@@ -1,22 +1,7 @@
-# Greeting Contract
+# 多岗位沟通记录（按需）
 
-## Evidence Table
+单条消息无需建表。需要多次续接时，在现有文件记录：岗位与来源、当前已知要求、最相关经历、已发送版本与时间、对方真实回复、下次动作。
 
-| Field | Record |
-|---|---|
-| Target role |  |
-| Reader |  |
-| Language |  |
-| Contact reason |  |
-| One value claim |  |
-| One evidence anchor |  |
-| Resume path |  |
-| Portfolio path |  |
-| Assumptions |  |
+有字数预算再记录预算来源、计数口径、实测字数。附件／链接记录实际是否可用，不将草稿写为已发送。
 
-## Anti-duplication Test
-
-- If the greeting is deleted, does the resume still work? It should.
-- If the resume is deleted, does the greeting still explain why the reader should open the attachment? It should.
-- Does the greeting repeat more than one summary item or more than one number? If yes, reduce it.
-- Does it use a slogan because the evidence is weak? Replace the slogan with a concrete problem/result link.
+内部复核：消息是否解释当前岗位的相关性；是否有可信事实；是否堆完整简历；是否捏造到岗条件；是否便于继续沟通。核心证据在招呼语和简历中重复一次可以有用，不机械限制只能出现一个数字。

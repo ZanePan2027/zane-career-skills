@@ -1,53 +1,24 @@
-# 职业资产路由与交接
+# 按眼前问题选择方法
 
-| 当前任务 | 主 Skill | 交付 | 停止线 |
-|---|---|---|---|
-| 校园经历、方向比较、毕业后重新定位 | `zane-career-assets` | 经历证据与岗位比较 | 用已提供经历推进，不编造能力或目标 |
-| 面试表达、项目追问或模拟面试 | `zane-career-assets` | 回答稿或逐轮演练与事实回填 | 模拟等待真实作答，不替用户表演 |
-| 从零建设整套职业资产 | `zane-career-portfolio-builder` | 跨载体项目与状态 | 未确认必要载体时不批量生产 |
-| 简历新建、重构或多语言 | `zane-career-resume-builder` | 文本、结构、可编辑源、PDF 与 QA | `content/structure/visual` 未审核时禁止 Build |
-| 网站与深读的载体分工 | `zane-career-portfolio-architecture` | 首页、深页和下载文档地图 | 不以网站摘要重复扩写代替深读 |
-| 作品集网站设计与开发 | `zane-career-portfolio-website-design` | 响应式网站与可部署源 | 结构与视觉未选择时禁止实现 |
-| 案例主张、数据与责任边界 | `zane-evidence-weighted-case-storytelling` | 证据加权的案例主张 | 证据不足时降级措辞或留空 |
-| 中文职业案例编辑 | `zane-career-case-editor-zh` | 有现场、取舍与边界的文本 | 不脱离证据自由发挥 |
-| 前雇主数据与截图审查 | `zane-former-employer-data-redactor` | 保留、模糊、口述或删除清单 | 高风险项未处理时禁止公开 |
-| 网页、Word、PDF、二维码和线上副本验收 | `zane-portfolio-multi-format-qa` | 逐格式 QA 报告 | 实际渲染或链接未测时不得通过 |
-| 招聘平台、猎头或主动投递首句 | `zane-career-application-greeting` | 短招呼语 | 不重复简历或伪造已读 JD |
+| 当前请求 | 主责方法 | 本轮应交付 |
+|---|---|---|
+| 不知道投什么、无实习经历、方向转变 | 本入口＋direction-and-evidence.md | 候选岗位方向、已有证据、能区分方向的小任务 |
+| 找岗位、看JD、识别岗位与公司条件 | 本入口＋job-search.md | 搜索条件、已核候选或岗位判断与关键核实问题 |
+| BOSS等平台在线简历、个人优势、投递反馈 | 本入口＋platform-and-applications.md | 平台字段文字、可见开头、针对岗位的修改或跟进安排 |
+| 招呼语、回复HR或主动联系 | zane-career-application-greeting | 当前对象可用的消息；不代发送 |
+| 简历重写、设计、语言版本 | zane-career-resume-builder | 用户要求格式的实际候选与必要检查 |
+| 多载体作品集项目 | zane-career-portfolio-builder | 按用途选择的案例与载体成品 |
+| 网站阅读路径、首页与深页分工 | zane-career-portfolio-architecture | 信息结构或与制作衔接的方案 |
+| 网站实现 | zane-career-portfolio-website-design | 响应式候选网站与实现源 |
+| 具体案例或管理业绩表达 | zane-evidence-weighted-case-storytelling | 责任匹配、可信且有说服力的文字 |
+| 中文案例去冗余 | zane-career-case-editor-zh | 改稿，必要时说明关键变化 |
+| 明确存在敏感材料 | zane-former-employer-data-redactor | 可用表达与需移除的具体内容 |
+| 文件或网站验收 | zane-portfolio-multi-format-qa | 实际检查结果与修复 |
+| 面试回答、模拟、笔试或作业 | 本入口＋interviews-and-assessments.md | 回答稿、真实等待的一轮练习、解题辅导或获准作业成果 |
+| offer比较、谈薪、签约及入职前问题 | 本入口＋offers-and-entry.md | 条件对照、建议、话术或必要手续清单 |
 
-方向与面试按 [统一运行模型](operating-model.md#方向比较与面试承接)处理，继续使用已有经历来源与当前任务。
+表内本入口引用都在本目录。主责按最终成果决定，按需读取对应完整方法，不全库扫描。辅助只在它改变当前成果时加入；不固定经过“诊断→脱敏→QA→确认→下一站”的长链。
 
-## 默认串联
+继承对象、用途、相关原件、已明确选择、真实分歧和下一成果即可交接，不要求用户另填交接包。任务完成后停止；只有用户提出下一请求或原请求尚有未完成交付时继续。
 
-`zane-career-assets 定义任务 → 事实与定位 → 当前交付物的专项 Skill → 脱敏 → 多格式 QA → 用户最终确认 → 必要时生成招呼语`
-
-这是项目级候选链，不是每个任务必经清单。每次只调用当前阶段必要的一个主 Skill 和最多两个前置／验收 Skill。缺少上游材料时先列出当前最小输入，不把其他 Skill 的调用当成完成条件。
-
-所有专项 Skill 共享`operating-model.md`中的五层真源。事实、术语、定位或公开边界变化时先改共享层，再路由到所有受影响载体；不要让简历、网站和英文版分别维护互相漂移的答案。
-
-多轮修改先按`change-control.md`分类反馈与计算影响范围。同类缺陷第二次出现时，从单项修复升级为类别审计；发布验收按`evaluation-model.md`选择字节、语义、视觉或交互证据。
-
-## 最小交接包
-
-```yaml
-task:
-  object: ""
-  audience: ""
-  deliverable: ""
-evidence:
-  facts: []
-  user_judgments: []
-  hypotheses: []
-decision:
-  chosen: []
-  rejected: []
-  open_gaps: []
-  constraints: []
-state:
-  current_gate: ""
-  gate_status: ""
-  artifacts: {}
-handoff:
-  next_skill: ""
-  acceptance: ""
-  stop: ""
-```
+用户可以直接使用任一专项Skill，不要求安装其他三套工作台。共有的方法随此工具箱交付；外部工具或其他套装未安装时，交付当前能够完成的部分，不把入群或购买设为前提。

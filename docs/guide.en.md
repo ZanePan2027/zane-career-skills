@@ -1,98 +1,51 @@
-# From one experience to a resume and interview
+# Start with the task you have
 
-[Installation](install.en.md) · [Skill directory](skill-inventory.en.md) · [简体中文](guide.md)
+[简体中文](guide.md) · [Home](../README.en.md)
 
-Start with `zane-career-assets`. Share an existing resume, course report, work sample, or job description. You can also describe one thing you have done and let the Agent ask for facts that affect the wording.
+Use `zane-career-assets` after installation. No workspace setup or complete personal history is required. All examples here are synthetic.
 
-The following is a **fictional teaching example**, showing how input, drafts, practice, and corrections fit together. It is not evidence of a real hiring outcome.
+## Rebuild an old résumé
 
-## 1. Describe the experience and purpose
+“Here are my old résumé and the internship description. Produce a one-page editable HTML résumé. Make a candidate first; I'll review it.”
 
-```text
-Use zane-career-assets.
-I am applying for an event operations internship. Our student group ran an event
-with about 300 attendees. I handled the registration form and check-in.
-When some attendees missed check-in, I proposed an additional check-in option
-and helped implement it. Here are the event plan and registration form.
-Help me identify what this experience supports, then draft one resume bullet.
-```
+The Agent uses available facts, selects relevant experience and generates the requested file. Missing contact details need not block content. It asks about missing information only when it changes the work. Request Word, PDF or text if that is what you need; a résumé request does not create a website automatically.
 
-The Agent checks your responsibilities, who proposed each change, and what the materials support. About 300 attendees describes the event's scale; it does not establish that you managed a team of 300. Without timing or satisfaction data, an efficiency improvement cannot be invented.
+## Recruitment-platform profile and messages
 
-If those facts are confirmed, a draft could be:
+“Write my online profile opening, the supporting strengths section and a greeting for this BOSS Zhipin role. Keep the opening within my requested 20 characters, including punctuation. Leave the attachment alone.”
 
-> Managed the registration form and check-in for a student event with about 300 attendees; proposed and helped implement an additional check-in option for missed registrations.
+A profile opening establishes relevant capability; the message connects that capability to this particular role. School projects and internship tasks are usable evidence. The tool does not invent commercial results or copy a full résumé summary into every touchpoint.
 
-This describes event execution experience. Compare it with the job requirements and clarify any remaining facts.
+A requested character budget is a writing constraint, not an official platform limit. Preview truncation, field limits, attachment support and links need evidence from the current interface. No reply-rate or algorithm-ranking claim is made.
 
-## 2. Practice the interview
+When a recruiter replies, provide the actual question and relevant facts. The next draft addresses that exchange. Drafting does not mean it has been sent.
 
-```text
-Practice an interview about this experience. Ask one question at a time,
-wait for my answer, then follow up.
-```
+## No internship yet
 
-The Agent might first ask: “Why did you add another check-in option? What problem did you observe?”
+“I have a course project and a student-club project. Compare how they support product and operations internships, then rewrite the most relevant paragraph for each.”
 
-Answer from your experience, then ask where your actions or evidence need clarification. Keep unknown details unresolved; explanations generated during practice do not become facts about the event.
+School and independent projects keep their real identities. Work quality, decisions, deliverables and feedback can demonstrate capability without invented employment or revenue.
 
-After several turns, ask:
+## Portfolio
 
-```text
-Use what I actually said to draft a one-minute project explanation.
-Keep any points that still need confirmation visible.
-```
+“I have two research reports and a prototype. Make a local portfolio website for a product internship.”
 
-## 3. Correct a fact
+The Agent selects work, builds a reading path, produces the site and checks it. A small portfolio need not become a large knowledge base. Leaders may present accountable team results as management achievements without a compulsory individual contribution percentage.
 
-Suppose the original event plan shows that the lead proposed the additional check-in option and you implemented it:
+## Interview practice
 
-```text
-Correction: the event lead proposed the additional check-in option.
-I carried it out. Check this project's resume and interview answers,
-revise the affected wording, and tell me which files changed.
-```
+“Interview me for this role. Ask one question at a time, wait for my answer, then follow up and give feedback.”
 
-The resume bullet becomes:
+The Agent waits for real answers. A continuation note preserves the current question, actual answer and pause point. Practice and formal assessments are distinguished; assessment assistance follows the stated rules.
 
-> Managed the registration form and check-in for a student event with about 300 attendees; carried out the additional check-in process as directed by the event lead.
+## Offers
 
-Interview answers also shift to your execution and handling of on-site issues. The claim that you proposed the change is withdrawn. Keep the original account and correction as evidence; use the corrected facts in the current draft.
+“A pays 12,000 a month, guaranteed for 12 months. B pays 11,000 for a guaranteed 14 months, up to 16. Compare guaranteed gross annual pay and draft a question about the bonus.”
 
-The Agent checks and edits materials when you continue the project. Provide the relevant files or project location so it can verify what the correction actually covered.
+The guaranteed totals are 144,000 and 154,000. “Up to 16” is not a guarantee. Compare benefits, probation terms and location costs when relevant; do not invent competing offers as negotiation leverage.
 
-## 4. Produce a complete document
+## Continue later
 
-```text
-Here is the job description and two more experiences.
-Propose the content and order for a one-page resume, then continue after we confirm it.
-```
+One-off tasks need no state file. For ongoing work, save the current version and real pause point in the existing project. Corrections update affected materials; previous submissions or deployments remain historical facts, not proof that the new version is live.
 
-Specify the role, language, and format for a resume, portfolio, website, or application message. File production uses tools available in the current environment. The delivery should identify the files actually created and anything still awaiting confirmation.
-
-## 5. Save and continue
-
-```text
-Save the confirmed experience, current resume, interview stopping point,
-and next steps in this project folder.
-```
-
-In a later session, provide the same folder and say:
-
-```text
-Use zane-career-assets and read this project.
-Continue the event operations interview practice using the corrected experience.
-```
-
-If the chat cannot save files, keep a continuation note and paste it into the next session. A finished document, a submitted application, an interview, and actual feedback are recorded separately.
-
-## Other starting points
-
-| Current task | What you can say |
-| --- | --- |
-| No target role yet | Here are several experiences. Identify the work they support, then compare possible roles. |
-| One resume paragraph | Revise this paragraph for the job description while preserving confirmed facts. |
-| Interview practice only | Use this resume and role description. Ask one question at a time and wait for my answer. |
-| New recruiter feedback | Review these questions. Which need clearer wording, and which need more evidence? |
-
-[Back to the overview](../README.en.md)
+[Skills](skill-inventory.en.md) · [Validation scope](testing.md)

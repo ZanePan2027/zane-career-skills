@@ -1,11 +1,7 @@
-# Version
+# 1.0.0 正式版
 
-Current release: **1.0.0**
+走出象牙塔 · 求职工具箱。2026-09-17内部修订。
 
-Documentation revision: **2026-09-16**. Skill methods and component versions are unchanged.
+未经真实用户测试迭代的内部修改保持1.0.0，以修订日期、提交和文件哈希区分。内部工程与Agent测试不等于真实用户验收，不据此升次版本。
 
-走出象牙塔 · Beyond the Ivory Tower
-
-Entry: `zane-career-assets` 1.0.0. Includes the eleven career Skills listed in the [inventory](docs/skill-inventory.md).
-
-[简体中文](README.md) · [English](README.en.md)
+11个独立安装入口；具体变更见[CHANGELOG](CHANGELOG.md)，实际验证见[testing](docs/testing.md)。

@@ -8,13 +8,13 @@
 
 `zane-career-assets`
 
-适用：不知道从哪里开始，整理经历、比较岗位或准备面试。
+适用：方向选择、找岗位、招聘平台资料与沟通、简历作品集、笔面试、offer、谈薪和入职前准备。
 
 ```text
 请使用 zane-career-assets，这是我做过的事和两份岗位说明，请帮我比较。
 ```
 
-产出：经历证据、岗位比较、回答稿或逐轮演练。
+产出：当前任务需要的判断、文件、文案或逐轮练习；默认直接完成，不要求先建工作台。
 
 ## [整套求职材料](../skills/zane-career-portfolio-builder/SKILL.md)
 
@@ -80,13 +80,13 @@
 
 `zane-evidence-weighted-case-storytelling`
 
-适用：团队合作、同期变化和个人贡献容易混在一起。
+适用：需要准确呈现领导责任、团队协作、实际结果或同期变化。
 
 ```text
-请使用 zane-evidence-weighted-case-storytelling，帮我区分这份案例里哪些结果能归因于我的动作。
+请使用 zane-evidence-weighted-case-storytelling，按我的真实职责把这份案例改成有说服力的求职表达。
 ```
 
-产出：与证据相符的主张、贡献边界和案例结构。
+产出：职责与证据相符的案例；负责人的团队业绩不因共同完成自动降级。
 
 ## [前雇主材料处理](../skills/zane-former-employer-data-redactor/SKILL.md)
 

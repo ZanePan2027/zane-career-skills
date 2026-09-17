@@ -7,11 +7,11 @@ metadata:
 
 # 多语言职业简历构建
 
-把简历当作有限空间内的招聘决策界面。固定的是判断顺序与验收标准，不固定页数、模块名称、颜色、版式或文案句型。简历继承职业资产系统的事实与判断层，不在 PDF 中另建一套事实。
+把简历当作有限空间内的招聘决策界面。固定的是判断顺序与验收标准，不固定页数、模块名称、颜色、版式或文案句型。同一候选人的在线资料、附件和作品集共用已知事实；独立做一份简历也可直接开始。
 
 本 Skill 只负责简历当前环节：让合适的读者形成相关性与能力判断并愿意进入下一环；不把简历生成、投递或面试结果混为一谈。
 
-若任务由 `zane-career-assets` 总控发起，先读取其状态文件和交接包，只处理当前获准阶段。若用户直接调用本 Skill 从零生成可投递简历，或要求跨阶段持续迭代，也要建立 `zane-career-assets-state.json`；局部改句、翻译已确认简历或发送已确认简历不建立状态文件。“帮我做完”不等于用户放弃文案、结构和视觉审核。
+若由 `zane-career-assets` 发起，继承已知事实、用户偏好和真实暂停点。直接调用同样可以完成任务。默认自主完成可编辑候选与检查；仅用户明确要求的阶段才等待确认。普通简历不建立状态文件或强制合同，多版本长期迭代才按需使用[保存与接续](../zane-career-assets/references/continuation.md)。
 
 ## 生产流程
 
@@ -19,7 +19,7 @@ metadata:
 
 ### 1. Define
 
-建立任务合同，确认目标岗位与级别、主要阅读者、招聘渠道、展示截断规则、打印或屏幕场景、语言、公开边界、截止时间与交付格式；完整项目再写清首触点要促成的决定、下一环和最终招聘结果。简历优先完成能力证明与面试入口，不主动承担后续面试／尽调的全部解释任务；只有会造成重大误导、法律／合规／隐私风险或直接改变当前岗位判断的事实才阻断成稿。
+从现有材料提取目标岗位与级别、主要阅读者、招聘渠道、展示截断规则、打印或屏幕场景、语言、公开边界、截止时间与交付格式；完整项目再写清首触点要促成的决定、下一环和最终招聘结果。简历优先完成能力证明与面试入口，不主动承担后续面试／尽调的全部解释任务；只有会造成重大误导、法律／合规／隐私风险或直接改变当前岗位判断的事实才阻断成稿。
 
 目标涉及特定国家或招聘市场时，读取[目标市场适配协议](../zane-career-assets/references/market-localization.md)，区分已验证规则、样本趋势与假设。
 
@@ -27,7 +27,7 @@ metadata:
 
 ### 2. Evidence
 
-读取用户资料并建立事实台账。区分本人动作、本人负责的团队结果、跨部门结果、直接数据、模型测算、同期趋势、转述和待验证假设。禁止根据职位常识补写不存在的预算权、管理、投放、制作、发布或转化职责。
+有旧简历时读取旧简历与相关资料；没有旧简历就从用户自述、课程、实习或作品中取材，先组织正文，不把提供旧简历设为前置。内部梳理事实；多来源或多载体才按需保存事实记录。用户自述无冲突时可据此起稿，不要求先补外部证明。区分本人动作、本人负责的团队结果、跨部门结果、直接数据、模型测算、同期趋势、转述和待验证假设。禁止根据职位常识补写不存在的预算权、管理、投放、制作、发布或转化职责。
 
 详细规则见 [references/content-and-evidence.md](references/content-and-evidence.md)。
 
@@ -41,7 +41,7 @@ metadata:
 
 执行删除测试：删掉一项后若不损失新的招聘判断，合并或删除。相同主题可以概括—证明，不得原样重复。
 
-同时做页数竞争，不先写“计划两页”：分别估算 1 页、2 页，以及资历确有必要时的 3 页方案。每新增一页必须承担前页无法承担的一项独立招聘判断；若某页明显稀疏，只因模块被人为拆开，必须比较“合并为更少页”而不能用留白合理化。若为了减页需要缩小到难读、破坏语义边界或删除关键证据，则保留更多页。把通过与淘汰的页数及代价写入合同。
+同时做页数竞争，不先写“计划两页”：分别估算 1 页、2 页，以及资历确有必要时的 3 页方案。每新增一页必须承担前页无法承担的一项独立招聘判断；若某页明显稀疏，只因模块被人为拆开，必须比较“合并为更少页”而不能用留白合理化。若为了减页需要缩小到难读、破坏语义边界或删除关键证据，则保留更多页。按实际信息量选页数；简单一页任务不输出页数比较报告。
 
 ### 5. Write
 
@@ -49,31 +49,33 @@ metadata:
 
 每个条目只承担一个主要招聘判断，但允许一个句子用分号连接动作与结果形成闭环。不要为了“金句感”先写宣言再列事实证明；主体性通过自然的`负责、主导、擅长、习惯、熟悉`等动词体现，不机械重复。
 
-### 6. Freeze
+### 6. 保留决定
 
-用 [assets/resume-decision-contract-template.md](assets/resume-decision-contract-template.md) 记录已确认、已淘汰、事实边界、模块分工、视觉偏好与当前停点。新事实、证据冲突或跨模块重复才允许重开冻结内容。
-
-每次用户确认、否决、纠正或提出稳定偏好后立即更新合同。改一处前检查当前条目、相邻模块、同类经历与网站／多语言版本；同类问题第二次出现时升级为类别审计，不继续逐行打补丁。
+沿用用户已确认的事实和偏好，收到纠正同步修改所有受影响版本。普通任务在现有上下文保持一致即可；反复迭代时可用[项目备注](assets/resume-decision-contract-template.md)保存当前稿、关键决定和暂停点，不要求用户填写或先批准。
 
 ### 7. Wireframe
 
-禁用品牌色、装饰、照片滤镜和动效。高不确定性时比较至少两种真正不同的信息结构；事实、参考和偏好已经足够明确时，可以提交一个有依据的结构，但必须做删除测试、替代结构反事实与页数竞争。只判断阅读顺序、信息重量、分页、行长、留白和入口是否成立。黑白结构未通过，不进入视觉。
+新建简历或用户要求重新设计时，从空白画布做出可渲染的黑白线稿，再进入视觉；不能只在说明里声称做过线稿。先用实际内容检查共用对齐轴、页边距、列宽、字号层级、段落／模块间距、阅读顺序与分页。线稿作为内部工作稿保留即可，无需用户逐步批准。仅改句、翻译或微调已有版式时保留既有结构，按影响范围检查，不无故从零推倒。
+
+禁用品牌色、装饰、照片滤镜和动效。高不确定性时比较至少两种真正不同的信息结构；事实、参考和偏好已经足够明确时，可以提交一个有依据的结构，但必须做删除测试、替代结构反事实与页数竞争。只判断阅读顺序、信息重量、分页、行长、留白和入口是否成立。内部确认阅读顺序成立后进入视觉，不把内部检查变成用户审批。
 
 比较方向时记录结构签名：入口形态、首个证据形态、主阅读轴、经历组织、数字角色、页面收束。两个方向至少有三项不同；“同一骨架换左右、换色或换标题”不算第二种方向。
 
 ### 8. Style
 
-读取 [references/style-personalization.md](references/style-personalization.md)，从用户本人、目标岗位、真实资产、偏好与反偏好中生成视觉人格。高不确定性时提出至少两种具有不同关系机制的方向；偏好和视觉参照明确时可以提出一个方向，但要说明依据、风险和被淘汰的替代机制。用户未选择前不把某种颜色、卡片、照片或字体写成默认模板。
+读取 [references/style-personalization.md](references/style-personalization.md)，从用户本人、目标岗位、真实资产、偏好与反偏好中生成视觉人格。高不确定性时提出至少两种具有不同关系机制的方向；偏好和视觉参照明确时可以提出一个方向，但要说明依据、风险和被淘汰的替代机制。用户未指定时，根据岗位、信息量和阅读场景自主选择并实现一个合适方向；不要仅给方案等待选择。具体颜色和组件不成为跨用户默认模板。
 
 ### 9. Build
 
-只将通过的黑白结构和视觉方向实现为可编辑源与 PDF。建立全局排版变量，避免为每段经历叠加局部补丁。压行优先改重复与冗余，不得为排版偷偷改变事实、时间或归因。
+将内部检查过的结构和视觉实现为用户请求的文件。用户要HTML就实际生成HTML，要Word或PDF则生成对应格式，不自动追加所有格式。建立全局排版变量，复用一致的对齐、字号、行距和间距；避免为单段叠加定位补丁。压行优先删重复，不偷改事实。
 
-Build 前必须运行 `zane-career-assets/scripts/career_assets_state.py check --action build-resume`。`task_contract / evidence_position / content / structure / visual` 任一项仍为 `pending` 时立即停止生产。只有用户明确确认才记为 `approved`；用户明确要求一次性出稿时才可记为 `waived`，且生成物仍只能称候选版。该检查不约束已确认简历的翻译、发送或一次性投递；这些动作的完成证据单独记录在现实介入链路中。
+普通候选制作无需状态检查。已有状态项目沿用[制作与确认](../zane-career-assets/references/stage-contract.md)：默认模式允许继续；只在用户明确设置的停点等待。内部检查记为checked，不能冒充用户approved。
+
+用户要BOSS在线简历时，按[招聘平台与投递](../zane-career-assets/references/platform-and-applications.md)分别处理开头、个人优势和经历字段；附件简历是完整筛选材料，不能直接用招呼语替代。只要其中一项就交付该项。
 
 ### 10. Verify
 
-运行 `scripts/check_resume_pdf.py` 做结构初检，再以高分辨率渲染全部页面，按从上到下的连续阅读带逐段实看。检查视觉居中、上方分离与下方归属、同类间距、断行、孤字、裁切、重叠、页尾平衡、链接和打印可读性。
+仅生成PDF时运行 `scripts/check_resume_pdf.py` 做结构初检，再以高分辨率渲染全部页面；HTML实际打开检查，Word按可用文档工具渲染。按从上到下的连续阅读带逐段实看。检查视觉居中、上方分离与下方归属、同类间距、断行、孤字、裁切、重叠、页尾平衡、链接和打印可读性。
 
 如果这是同一证据系统的另一语言版本，必须把已确认版本作为视觉参照重新对照，而不是只检查英文版自己是否“没有溢出”：比较标题层级、正文可读字号、行距、模块间距、色块比例、每页内容重心和页尾收束。语言变化会改变换行和信息高度，不能沿用原语言的字号／行距参数后直接放行。若新语言版明显更紧、更小、内容集中在页面上半部，或两页都出现无功能大空白，视觉验收失败，必须回到全局排版变量或分页重排。
 
@@ -89,7 +91,7 @@ When an English resume is requested, do not translate the Chinese PDF line by li
 - rewrite labels, sentence rhythm, and business verbs in native professional English;
 - preserve dates, numbers, units, evidence type, ownership, and uncertainty exactly;
 - keep a terminology contract for brands and platforms; do not invent legal English company names;
-- keep model-estimated results, peaks, cumulative values, GTV, team outcomes, and direct outcomes visibly distinct;
+- preserve the actual metric and responsibility: a leader may present accountable team outcomes as leadership achievements; distinguish estimates, peaks, cumulative values and coincident trends when material, without unsolicited disclaimers;
 - review for translationese, corporate publicity language, unexplained China-market jargon, and repeated summary/experience claims;
 - decide labels, numbering, chronology and section breaks by the target market and evidence density; removing Chinese-style labels or numbering is not automatically more native, and keeping them is not automatically wrong;
 - run an independent native-editing pass after factual translation: shorten over-complete arguments, remove management manifestos and Chinese rhetorical parallelism, while preserving distinctive personal judgment;
@@ -102,7 +104,7 @@ Do not rebuild an approved PDF merely because website content or a deployment id
 
 ### 12. Handoff
 
-交付事实台账、决策合同、可编辑源、生成器、最终文件和 QA 结果。若有作品集，读取 [references/cross-medium-handoff.md](references/cross-medium-handoff.md)，建立 `简历主张 → 网站入口 → 深读证据` 映射；硬事实一致，不要求逐字统一。英文交付同时保存翻译分析、术语合同、批评与修订记录；把当前可访问地址和部署后语言路径分开记录，不能把临时根路径写成英文站已上线。
+交付用户请求的成品和必要可编辑源，简短说明检查情况与真实缺口。不要默认附送事实台账、合同、生成器、翻译审计和全套QA报告。复杂多载体才按需保存来源与关键决定。若有作品集，读取[跨载体衔接](references/cross-medium-handoff.md)，核对硬事实、阅读路径与语言链接；无需为了交一份简历建网站。
 
 版本状态必须互斥：未经用户确认只能称候选版；用户确认且交付源完成后才称确认版或正式投递版。简历没有“待部署”状态。不得把“文件已生成”写成“已确认”。
 

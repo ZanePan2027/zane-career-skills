@@ -2,102 +2,76 @@
 
 [简体中文](README.md) | English
 
-> Turn what you have done into a resume, a portfolio, and clear stories for your job search.
+> Get help with the job-search problem in front of you—from choosing roles to applications, interviews and offers.
 
 [![Version](https://img.shields.io/badge/version-v1.0.0-2563EB.svg?style=flat-square)](VERSION.md)
 [![License](https://img.shields.io/badge/license-MIT-16A34A.svg?style=flat-square)](LICENSE)
 
-**An AI job search toolkit for students entering work and recent graduates reconsidering their direction.**
+**An AI toolkit for the steps before starting a job, primarily for interns, new graduates and people with 1–2 years of experience.** Experienced applicants can use it too; their actual responsibilities and seniority are preserved.
 
-Find evidence of your skills in coursework, student activities, internships, and work. Compare roles, create resumes and portfolios, and prepare for interviews. As your experience grows, use the same methods for job changes and career transitions.
+Works with Claude Code, Codex and other tools supporting Agent Skills. Free, open source and independently installable.
 
-**For Claude Code, Codex, and other tools that support Agent Skills. Free and open source.**
+[Quick start](#quick-start) · [Tasks](#tasks) · [Guide](docs/guide.en.md) · [Skills](docs/skill-inventory.en.md) · [Installation](docs/install.en.md)
 
-[Quick start](#quick-start) · [What it helps with](#what-it-helps-with) · [Guide](docs/guide.en.md) · [Skill directory](docs/skill-inventory.en.md) · [Installation and updates](docs/install.en.md)
+![Start with your current job-search task](docs/career-assets-flow.en.svg)
 
-![From experience to job search materials](docs/career-assets-flow.en.svg)
-
-**Start with `zane-career-assets` and describe the task at hand.** It selects the methods needed for your task. You can begin with the material you already have.
-
-<a id="install"></a>
+Bring an old résumé, a job description, project material, an interview question or an offer. Ask for the result you need. No workspace setup or fixed sequence is required.
 
 ## Quick start
-
-### 1. Install
-
-Run in your terminal:
 
 ```bash
 npx -y skills add ZanePan2027/zane-career-skills -g --all
 ```
 
-Or ask your Agent:
+Or tell your Agent:
 
 ```text
 Install all Skills from https://github.com/ZanePan2027/zane-career-skills.
-Then use zane-career-assets to help me with this: ...
+Then use zane-career-assets to help me with this task: …
 ```
 
-Select your Agent in the installer, then reload Skills if required. The terminal command requires Node.js and `npx`. Omit `-g` to install for the current project; see the [installation guide](docs/install.en.md) for updates.
-
-### 2. Describe the task
+Choose your Agent in the installer and reload if your host requires it. The command requires Node.js and `npx`. See [installation](docs/install.en.md).
 
 ```text
-Use zane-career-assets.
-I am preparing for my first job. I completed a course project and managed
-registration and check-in for a student event. Here are my report and notes.
-Help me identify what belongs on my resume, then compare what to emphasize
-for these two roles.
+Use zane-career-assets. Here are my old résumé and the role I want.
+I mainly apply through BOSS Zhipin. Rework my résumé, write the opening
+of my online profile, and draft a first message for this role.
+Make an editable version first; I'll give feedback on it.
 ```
 
-A useful first result is a set of relevant experiences, your contribution, facts to clarify, and role-specific resume bullets. Share an existing resume or job description if available. You can also begin by describing one thing you have done.
+The Agent uses what you have provided and asks only about gaps that affect the result. It normally completes a candidate and checks it. If you prefer to approve the text before design, say so.
 
-### 3. Continue with a draft or practice
+## Tasks
 
-```text
-Turn this experience into a resume bullet.
-Then practice an interview about it. Ask one question at a time and wait for my answer.
-```
-
-For a complete resume, portfolio, or website, specify the role, language, and files you need. The same entry also handles a single focused task.
-
-## What it helps with
-
-| What you can say | What you can get |
+| Need | Result |
 | --- | --- |
-| I have no internship. Can a course project go on my resume? | Your actions, work samples, and supported resume bullets |
-| What evidence do I have for each of these two roles? | A comparison of requirements, strengths, and missing evidence |
-| I have an old resume and want to apply in English | Content and layout adapted to the role and hiring market |
-| My project answer sounds like a list of events | A clear answer, with follow-up questions and revisions |
-| We worked as a team. How do I describe my contribution? | A distinction between your actions and team results |
-| I want a portfolio to show my projects | Reading structure, case content, and a website implementation |
+| Choose roles or find experience without internships | Role comparisons, honest material from school and projects, practical next steps |
+| Find internships or interpret a job description | Search criteria, verifiable openings when access is available, eligibility and fit |
+| Improve BOSS Zhipin profile and messages | Profile opening, supporting strengths, role-specific greeting and follow-up |
+| Rebuild or localize a résumé | Content, layout and requested editable or export files |
+| Create a portfolio | Work selection, case studies, documents or a website as needed |
+| Prepare for tests and interviews | Practice, answer editing and one-question-at-a-time mock interviews |
+| Compare offers and negotiate | Comparable compensation, questions to resolve and reply drafts |
+| Prepare for signing and starting | Relevant document checks, questions and timing |
 
-## From experience to application materials
+It supports the pre-employment journey; it does not guarantee an offer. Current listings, policies and platform constraints need current evidence. Unavailable information is not presented as a live search result.
 
-The Agent organizes facts and evidence from your experience, then uses the target role to decide what to emphasize. Resumes, portfolios, application messages, and interview answers draw on that evidence.
+## Designed for recruitment platforms
 
-When continuing the same project, bring back corrections or hiring feedback. The Agent checks which materials are affected, updates them, and explains what changed. Producing and checking Word, PDF, or website files uses the tools available in your Agent environment.
+An online profile opening establishes relevance. The full profile and attachment provide evidence. A greeting connects it to this role; a portfolio provides depth when useful. These touchpoints share facts but serve different purposes.
 
-[Follow a complete example: from a student event to a resume and interview](docs/guide.en.md)
+There is no claimed universal “22-character” rule. Actual interface evidence or your requested budget determines character constraints. [Platform evidence and unknowns](skills/zane-career-assets/references/platform-evidence.md)
 
-## Continue a previous task
+Leaders can present outcomes for which their teams were accountable as leadership achievements. Contributors describe their actual work. Normal application copy does not carry a compulsory attribution report.
 
-Keep the work in a project folder you choose. Before pausing, ask the Agent to save the selected version, outstanding facts, and next step. Give a later session that folder and identify the application or interview practice to continue.
+## Continue when useful
 
-If the chat cannot read or write files, save a continuation note and provide it next time with the relevant material.
+A one-off task can finish immediately. For ongoing work, save the current version and pause point in your existing project. Continue there without repeating a known folder path. In chat-only tools, keep a short handoff summary.
 
-## Use a specific method
+Drafting is separate from sending, publishing or accepting an offer. Those actions follow your corresponding authorization.
 
-Start with `zane-career-assets`. Once familiar, you can directly select resume, portfolio, case writing, application messages, or delivery checks. The [Skill directory](docs/skill-inventory.en.md) lists situations, example requests, and outputs for all eleven entries.
+All 11 Skills work as one independent toolkit. Start with `zane-career-assets`, or select a [specialist](docs/skill-inventory.en.md). No other workbench or DBS installation is required.
 
-## Choosing between the two toolkits
+See the [guide](docs/guide.en.md), [validation scope](docs/testing.md) and [design sources](docs/provenance.md). Real response rates and hiring outcomes still require real user feedback.
 
-Start here to match experience to roles, create application materials, and practice interviews. For a choice involving family arrangements, finances, location, and personal direction, use [Live Your Life Well](https://github.com/ZanePan2027/zane-life-workbench) to weigh them together. Each toolkit works independently.
-
-## Provenance and license
-
-These methods grew from practical work on resumes, bilingual portfolios, project stories, and job applications, with continued attention to role relevance, consistency, and real feedback.
-
-See [Provenance](docs/provenance.md) for design references. This repository uses the [MIT License](LICENSE).
-
-Author: Zane
+[MIT License](LICENSE). Author: Zane.

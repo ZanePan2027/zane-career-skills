@@ -9,7 +9,7 @@ metadata:
 
 目标不是让文字更“高级”，而是让招聘者相信作者做过业务，并愿意继续追问。编辑对象来自共享主张与证据，不把长文写成证明简历口号的宣言材料。
 
-若用户要完整建设作品集，由 `zane-career-portfolio-builder` 提供事实台账、案例任务和载体长度；本Skill不得脱离证据自由发挥，改稿后必须返回删改原因、边界变化和适合网站/知识库的不同版本。
+若用户要完整建设作品集，由 `zane-career-portfolio-builder` 提供事实台账、案例任务和载体长度；本Skill不得脱离证据自由发挥，按当前载体交付改稿，只说明会影响用户判断的实质变化，不自动生成多个版本。
 
 ## 编辑顺序
 
@@ -39,6 +39,6 @@ metadata:
 
 ## 输出格式
 
-先给删改判断，再给修改稿；解释最多指出3个关键变化。若用户只要求审查，不直接改文件。涉及数字归因时调用 `zane-evidence-weighted-case-storytelling`。
+先给修改稿；解释最多指出3个关键变化。若用户只要求审查，不直接改文件。涉及数字归因时调用 `zane-evidence-weighted-case-storytelling`。
 
 来源说明见 [references/method-origin.md](references/method-origin.md)。

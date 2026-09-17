@@ -8,13 +8,13 @@ Start with `zane-career-assets`. It selects the methods needed for your task. Us
 
 `zane-career-assets`
 
-Use when: Starting, reviewing experience, comparing roles, or preparing for interviews.
+Use when: Choosing roles, finding openings, using recruitment platforms, making application materials, preparing for assessments and interviews, comparing offers, or preparing to start.
 
 ```text
 Use zane-career-assets. Here is my experience and two job descriptions. Help me compare them.
 ```
 
-Output: Experience evidence, role comparisons, answers, or turn-by-turn practice.
+Output: The result needed for the current task: a decision, file, message or turn-by-turn practice. No workbench setup is required.
 
 ## [Complete application materials](../skills/zane-career-portfolio-builder/SKILL.md)
 
@@ -80,13 +80,13 @@ Output: A revised case preserving the facts, with relevant editing notes.
 
 `zane-evidence-weighted-case-storytelling`
 
-Use when: Separating personal contribution, teamwork, and concurrent changes.
+Use when: Presenting leadership responsibility, collaboration and outcomes accurately.
 
 ```text
-Use zane-evidence-weighted-case-storytelling. Identify which outcomes in this case are supported as results of my actions.
+Use zane-evidence-weighted-case-storytelling. Turn this case into convincing application copy that reflects my actual responsibilities.
 ```
 
-Output: Evidence-supported claims, attribution boundaries, and case structure.
+Output: Credible case copy. Accountable team outcomes are valid leadership achievements; shared execution does not automatically weaken them.
 
 ## [Employer material](../skills/zane-former-employer-data-redactor/SKILL.md)
 
