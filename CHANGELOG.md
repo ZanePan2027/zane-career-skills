@@ -1,3 +1,11 @@
+# 1.0.0 · 2026-09-17 使用流程修订
+
+- 按客户端补齐安装方式；豆包使用本地 Skills 模式，WorkBuddy 使用原生技能目录与管理入口。
+- Clarify host-specific installation for Doubao desktop and WorkBuddy.
+- 局部修改按影响范围检查；常规有效版式可以保留，双语按含义与证据对齐。
+- 冲突只暂停相关主张，交付直接呈现成果与实质缺口；保留线稿、英文表达与真实渲染规范。
+- Scope checks to affected content, preserve suitable layouts, and align bilingual meaning and evidence.
+
 # 2026-09-17 Agent 使用范围
 
 - 首页与安装说明统一列出豆包、WorkBuddy、Claude Code、Codex及其他支持Skills的Agent。

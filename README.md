@@ -9,7 +9,7 @@
 
 **面向入职前各环节的 AI 求职工具箱，重点服务实习生、应届毕业生和工作 1—2 年的新人。** 有多年经验、正在换工作的人也可以用，按实际资历处理。
 
-**支持：豆包、WorkBuddy、Claude Code、Codex，以及其他支持 Skills 的 Agent。免费开源。**
+**支持：豆包桌面端（本地 Skills 模式）、WorkBuddy、Claude Code、Codex，以及其他支持 Skills 的 Agent。免费开源。**
 
 [快速开始](#快速开始) · [可以处理的事](#可以处理的事) · [使用教程](docs/guide.md) · [能力目录](docs/skill-inventory.md) · [安装与更新](docs/install.md)
 
@@ -26,7 +26,7 @@
 在终端执行：
 
 ```bash
-npx -y skills add ZanePan2027/zane-career-skills -g --all
+npx -y skills add ZanePan2027/zane-career-skills -g --skill "*"
 ```
 
 也可以直接告诉 Agent：
@@ -36,7 +36,7 @@ npx -y skills add ZanePan2027/zane-career-skills -g --all
 然后使用 zane-career-assets，帮我处理这件事：……
 ```
 
-按安装界面选择 Agent，完成后按宿主要求重载。命令安装需要 Node.js 和 `npx`；项目级安装和更新见[安装说明](docs/install.md)。
+命令安装适用于 Codex、Claude Code 等安装器已列出的 Agent，需要 Node.js 和 `npx`。豆包、WorkBuddy 请使用上面的 Agent 安装请求，具体步骤见[安装说明](docs/install.md)。
 
 ### 2. 从手头的任务开始
 

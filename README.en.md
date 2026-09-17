@@ -9,7 +9,7 @@
 
 **An AI toolkit for the steps before starting a job, primarily for interns, new graduates and people with 1–2 years of experience.** Experienced applicants can use it too; their actual responsibilities and seniority are preserved.
 
-**Supports Doubao, WorkBuddy, Claude Code, Codex, and other Agents that support Skills. Free and open source.**
+**Supports Doubao desktop with local Skills, WorkBuddy, Claude Code, Codex, and other Agents that support Skills. Free and open source.**
 
 [Quick start](#quick-start) · [Tasks](#tasks) · [Guide](docs/guide.en.md) · [Skills](docs/skill-inventory.en.md) · [Installation](docs/install.en.md)
 
@@ -20,7 +20,7 @@ Bring an old résumé, a job description, project material, an interview questio
 ## Quick start
 
 ```bash
-npx -y skills add ZanePan2027/zane-career-skills -g --all
+npx -y skills add ZanePan2027/zane-career-skills -g --skill "*"
 ```
 
 Or tell your Agent:
@@ -30,7 +30,7 @@ Install all Skills from https://github.com/ZanePan2027/zane-career-skills.
 Then use zane-career-assets to help me with this task: …
 ```
 
-Choose your Agent in the installer and reload if your host requires it. The command requires Node.js and `npx`. See [installation](docs/install.en.md).
+The command works with Agents listed in the installer, including Codex and Claude Code, and requires Node.js and `npx`. For Doubao or WorkBuddy, use the Agent request above and follow the [host-specific instructions](docs/install.en.md).
 
 ```text
 Use zane-career-assets. Here are my old résumé and the role I want.
