@@ -9,13 +9,13 @@
 
 **An AI toolkit for the steps before starting a job, primarily for interns, new graduates and people with 1–2 years of experience.** Experienced applicants can use it too; their actual responsibilities and seniority are preserved.
 
-Works with Claude Code, Codex and other tools supporting Agent Skills. Free, open source and independently installable.
+Works with Claude Code, Codex and other tools supporting Agent Skills. Free and open source.
 
 [Quick start](#quick-start) · [Tasks](#tasks) · [Guide](docs/guide.en.md) · [Skills](docs/skill-inventory.en.md) · [Installation](docs/install.en.md)
 
 ![Start with your current job-search task](docs/career-assets-flow.en.svg)
 
-Bring an old résumé, a job description, project material, an interview question or an offer. Ask for the result you need. No workspace setup or fixed sequence is required.
+Bring an old résumé, a job description, project material, an interview question or an offer. Ask for the result you need. Start with the task that matters to you now.
 
 ## Quick start
 
@@ -54,24 +54,18 @@ The Agent uses what you have provided and asks only about gaps that affect the r
 | Compare offers and negotiate | Comparable compensation, questions to resolve and reply drafts |
 | Prepare for signing and starting | Relevant document checks, questions and timing |
 
-It supports the pre-employment journey; it does not guarantee an offer. Current listings, policies and platform constraints need current evidence. Unavailable information is not presented as a live search result.
-
 ## Designed for recruitment platforms
 
 An online profile opening establishes relevance. The full profile and attachment provide evidence. A greeting connects it to this role; a portfolio provides depth when useful. These touchpoints share facts but serve different purposes.
 
-There is no claimed universal “22-character” rule. Actual interface evidence or your requested budget determines character constraints. [Platform evidence and unknowns](skills/zane-career-assets/references/platform-evidence.md)
-
-Leaders can present outcomes for which their teams were accountable as leadership achievements. Contributors describe their actual work. Normal application copy does not carry a compulsory attribution report.
+The observed recruiter recommendation list shows about 22 Chinese characters of the profile opening. Aim to convey one relevant strength within 20–22 characters, then expand it for search results and the full profile. The Agent adapts the copy to your interface. [Interface observations](skills/zane-career-assets/references/platform-evidence.md)
 
 ## Continue when useful
 
 A one-off task can finish immediately. For ongoing work, save the current version and pause point in your existing project. Continue there without repeating a known folder path. In chat-only tools, keep a short handoff summary.
 
-Drafting is separate from sending, publishing or accepting an offer. Those actions follow your corresponding authorization.
+The toolkit contains 11 Skills. Start with `zane-career-assets`, or select a [specialist](docs/skill-inventory.en.md).
 
-All 11 Skills work as one independent toolkit. Start with `zane-career-assets`, or select a [specialist](docs/skill-inventory.en.md). No other workbench or DBS installation is required.
-
-See the [guide](docs/guide.en.md), [validation scope](docs/testing.md) and [design sources](docs/provenance.md). Real response rates and hiring outcomes still require real user feedback.
+See the [guide](docs/guide.en.md), [validation scope](docs/testing.md) and [design sources](docs/provenance.md). Share your experience through Issues, with personal and company details removed.
 
 [MIT License](LICENSE). Author: Zane.

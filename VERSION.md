@@ -4,4 +4,4 @@
 
 未经真实用户测试迭代的内部修改保持1.0.0，以修订日期、提交和文件哈希区分。内部工程与Agent测试不等于真实用户验收，不据此升次版本。
 
-11个独立安装入口；具体变更见[CHANGELOG](CHANGELOG.md)，实际验证见[testing](docs/testing.md)。
+11个专项工具；具体变更见[CHANGELOG](CHANGELOG.md)，实际验证见[testing](docs/testing.md)。

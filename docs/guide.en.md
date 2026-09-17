@@ -2,7 +2,7 @@
 
 [简体中文](guide.md) · [Home](../README.en.md)
 
-Use `zane-career-assets` after installation. No workspace setup or complete personal history is required. All examples here are synthetic.
+Use `zane-career-assets` after installation. Start with your materials and the result you want. All examples here are synthetic.
 
 ## Rebuild an old résumé
 
@@ -16,9 +16,9 @@ The Agent uses available facts, selects relevant experience and generates the re
 
 A profile opening establishes relevant capability; the message connects that capability to this particular role. School projects and internship tasks are usable evidence. The tool does not invent commercial results or copy a full résumé summary into every touchpoint.
 
-A requested character budget is a writing constraint, not an official platform limit. Preview truncation, field limits, attachment support and links need evidence from the current interface. No reply-rate or algorithm-ranking claim is made.
+The observed desktop recommendation list shows about 22 Chinese characters; ordinary search shows two lines. Put one relevant strength first and expand it in the profile. The Agent can adjust the copy to a screenshot of your current interface.
 
-When a recruiter replies, provide the actual question and relevant facts. The next draft addresses that exchange. Drafting does not mean it has been sent.
+When a recruiter replies, provide the actual question and relevant facts. The next draft addresses that exchange.
 
 ## No internship yet
 
@@ -30,7 +30,7 @@ School and independent projects keep their real identities. Work quality, decisi
 
 “I have two research reports and a prototype. Make a local portfolio website for a product internship.”
 
-The Agent selects work, builds a reading path, produces the site and checks it. A small portfolio need not become a large knowledge base. Leaders may present accountable team results as management achievements without a compulsory individual contribution percentage.
+The Agent selects work, builds a reading path, produces the site and checks it. A small portfolio need not become a large knowledge base. Leaders may present accountable team results as management achievements.
 
 ## Interview practice
 
@@ -46,6 +46,6 @@ The guaranteed totals are 144,000 and 154,000. “Up to 16” is not a guarantee
 
 ## Continue later
 
-One-off tasks need no state file. For ongoing work, save the current version and real pause point in the existing project. Corrections update affected materials; previous submissions or deployments remain historical facts, not proof that the new version is live.
+For ongoing work, save the current version and real pause point in the existing project. Corrections update affected materials; previous submissions or deployments remain historical facts, not proof that the new version is live.
 
 [Skills](skill-inventory.en.md) · [Validation scope](testing.md)
