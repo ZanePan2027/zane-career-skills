@@ -26,7 +26,7 @@
 在终端执行：
 
 ```bash
-npx -y skills add ZanePan2027/zane-career-skills -g --skill "*"
+npx -y skills add ZanePan2027/zane-career-skills -g --all
 ```
 
 也可以直接告诉 Agent：

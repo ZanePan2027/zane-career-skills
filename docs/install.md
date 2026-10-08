@@ -11,10 +11,10 @@
 Codex、Claude Code 等安装器已列出的 Agent，可在终端执行，需要 Node.js 和 `npx`：
 
 ```bash
-npx -y skills add ZanePan2027/zane-career-skills -g --skill "*"
+npx -y skills add ZanePan2027/zane-career-skills -g --all
 ```
 
-这会安装完整求职工具箱。`--skill "*"` 选择全部 Skills；在安装器中选择目标 Agent，安装后按客户端要求重载。只在当前项目使用时，省略 `-g`。
+这会安装完整求职工具箱。`--all` 会安装全部 Skills，并装进安装器支持的所有 Agent，无需逐个选择；安装后按客户端要求重载。只想装到某一个 Agent 时，改用 `--skill "*" --agent <名称>`。只在当前项目使用时，省略 `-g`。
 
 也可以直接告诉 Agent：
 

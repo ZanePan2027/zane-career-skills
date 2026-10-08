@@ -20,7 +20,7 @@ Bring an old résumé, a job description, project material, an interview questio
 ## Quick start
 
 ```bash
-npx -y skills add ZanePan2027/zane-career-skills -g --skill "*"
+npx -y skills add ZanePan2027/zane-career-skills -g --all
 ```
 
 Or tell your Agent:
